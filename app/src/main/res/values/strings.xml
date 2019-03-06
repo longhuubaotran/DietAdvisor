@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Diet Advisor</string>
+    <string name="editText_weight">Weight (kg/lbs)</string>
+    <string name="editText_height">Height (cm/ft)</string>
+    <string name="btn_calculateBMI">Calculate BMI</string>
+    <string name="show_bmi">Your bmi is: </string>
+    <string name="normal_bmi">You are in good shape</string>
+    <string name="overweight_bmi">\n You are overweight \n  No worries, I will help you</string>
+    <string name="extreme_bmi"> \n Your health is really bad now!!! You need to work out seriously \n
+        No worries, I will help you</string>
+    <string name="skinny_bmi">\n You are so skinny!!!,eat whatever you like now!!! \n
+     No worries, I will help you</string>
+    <string name="invalid_input">Invalid height or weight</string>
+    <string name="null_input">Weight or Height can not be null</string>
+    <string name="not_integer">Weight or Height must be a number</string>
+    <string name="showAdvise">Show advise</string>
+    <string name="advise"> is your ideal weight. We will get that weight together. Please, tell me
+    how many days you want to achieve it within.</string>
+    <string name="daysEditText">How many days</string>
+    <string name="btn_done">Done!</string>
+    <string name="mustBeANum">Day must be a number</string>
+    <string name="cantBeNegative">Day cant be a negative number</string>
+    <string name="cantClick">You have a fitness body, you dont need my advice</string>
+    <string name="tooSkinny">You are too skinny. All I could say is EAT!!!</string>
+    <string name="shortTime">because of your entered days. You have to work out insanely to achieve it</string>
+    <string name="longTime">. So it is not going to take that long </string>
+    <string name="us_system">US Unit</string>
+    <string name="metric_system">Metrics Unit</string>
+    <string name="choose_system">Choose Unit</string>
+    <string name="editText_in">in</string>
+</resources>

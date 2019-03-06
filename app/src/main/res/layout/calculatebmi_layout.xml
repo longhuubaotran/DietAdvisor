@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hfad.com.dietadvisor.calculateBMI_fragment">
+
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:hint="@string/editText_weight" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_weight"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:hint="@string/editText_height" />
+
+    <EditText
+        android:id="@+id/edit_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11mm"
+        android:inputType="none"
+        android:layout_toEndOf="@id/edit_height"
+        android:hint="@string/editText_in" />
+
+    <TextView
+        android:id="@+id/choose_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13mm"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/edit_height"
+        android:text="@string/choose_system" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_system"
+        android:layout_marginLeft="10mm"
+        android:layout_toRightOf="@id/edit_height">
+
+        <RadioButton
+            android:id="@+id/metric_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/metric_system" />
+
+        <RadioButton
+            android:id="@+id/us_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/us_system" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_calculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/btn_calculateBMI" />
+
+    <TextView
+        android:id="@+id/resultBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_calculateBMI"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btn_showAdvise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultBMI"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:hint="@string/showAdvise" />
+</RelativeLayout>
